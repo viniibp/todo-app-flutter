@@ -1,0 +1,44 @@
+name: todoapp
+description: "A Flutter ToDo application."
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  flutter_bloc: ^8.1.3
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  flutter_slidable: ^3.0.1
+  equatable: ^2.0.5
+  url_launcher: ^6.2.2
+  flutter_native_splash: ^2.3.8
+  flutter_launcher_icons: ^0.13.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+      - lib/assets/
+
+flutter_native_splash:
+  color: '#111822'
+  image: lib/assets/masthead.png
+
+flutter_launcher_icons:
+  android: true
+  image_path_android: "lib/assets/ic_launcher.png"
+  adaptive_icon_foreground: "lib/assets/ic_launcher.png"
